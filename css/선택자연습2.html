@@ -8,6 +8,7 @@
     body{
       font-size: 14px; /*0.875em  87.5%  11pt*/
       color:#f00;
+      /* font-family: "나눔","궁서체"; */
     }
     /* 섹션의 제목을 진하게 크게 24px 보라색 
       섹션의 제목 요소 선택자-> .title
@@ -62,6 +63,38 @@
       background-color: #ccc;/*테스용*/
       line-height:1.4
     }
+
+    /* 
+    #section2 의 .box요소중 첫번째 자식   ->#section2 .box:first-child 
+    궁서체
+    */
+    /* #section2 .box{ */
+    /* #section2 .box:first-child{   첫번째 자식*/
+    /* #section2 .box:last-child{  마지막 자식*/
+    #section2 .box:nth-child(3){
+      font-family:"궁서체";
+      color:#00f;
+    }
+
+
+    /* 
+    *쇼핑몰 디자인수정에 적용
+    */
+
+    /* 카테고리 메뉴중 첫번째 메뉴를 빨강색 진하게 */
+    #category .position .xans-record-:first-child a{
+      color:#f00;
+      font-weight: bold;
+    }
+
+
+    /* 
+    카테고리 메뉴중 세번째 메뉴를 배경색 반투명 빨강
+    선택자 카테고리 메뉴중 세번째 메뉴
+    */
+    #category .position .xans-record-:nth-child(3) a{
+      background-color: rgba(255,0,0,0.5);
+    }
   </style>
 
 </head>
@@ -91,6 +124,8 @@
         <div class="inner">
           <div class="title"><a href="">제목</a></div>
           <div class="desc">
+            <!-- .box>lorem8 -->
+            <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
             <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
             <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, provident sunt ducimus ullam ratione dolores harum vero rem ipsa expedita adipisci ipsam eligendi incidunt omnis vel et molestias suscipit alias!
             Vel ducimus mollitia temporibus non laudantium et expedita, molestiae natus culpa quam accusamus itaque sed autem aspernatur alias blanditiis fugit ipsam quas repellendus dolores? Velit magnam repudiandae dolores expedita omnis. Molestias voluptatem cum voluptatibus temporibus doloribus.</div>
